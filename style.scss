@@ -1,0 +1,202 @@
+
+// --------HEADER--------------------------------------
+
+.container-wide{
+    max-width: 1790px;
+    padding: 0px 15px;
+    margin:0px auto;
+}
+
+.header {
+    padding-top: 64px;
+    padding-bottom:843px;
+        .nav__wrapper{
+            margin-bottom: 198px;
+        }
+		&__row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+		}
+		&__logo {
+            font-family: Playfair Display;
+            font-weight: 700;
+            font-size: 32px;
+		}
+		&__nav {
+            ul{
+                margin: 0;
+                padding: 0;
+                display: flex;
+            }
+            li{
+                transition: 0.2s ease-in;
+                &:hover{
+                    color: #FBD784;
+                    position: relative;
+                    top: -1px;
+                }
+                &:not(:last-child){
+                    margin-right: 40px;
+                }
+            }
+            a{
+                color:inherit;
+                font-weight: bold;
+                font-size: 18px;
+            }
+		}
+		&__login {
+            padding-left: 32px;
+            position: relative;
+            a{
+                font-size: 17px;
+                font-weight: 700;
+                color: inherit;
+                transition: 0.2s ease-in;
+                &:hover{
+                    color: #FBD784;
+                }
+            }
+            &::before {
+            content:"";
+            display: block;
+            position: absolute;
+            left: 0;
+            top:0;
+            background-image: url(/image/Icons/pplIcon.svg);
+            z-index: 10;
+            width: 24px;
+            height: 24px;
+            }
+		}
+}
+
+// HEADER--HERO--------------------------------------
+.hero {
+    display: block;
+    max-width: 980px;
+    padding: 0px 15px;
+    margin: 0 auto;
+    transition: 0.33s cubic-bezier(1.000, 0.540, 0.570, 1.650); 
+    &:hover{
+        transform: translateY(-5%);
+    }
+    &__cateogory {
+        position: relative;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.222;
+        color:#FBD784;
+        padding-left: 104px;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+        margin-bottom: 32px;
+        
+        &::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 72px;
+            height: 2px;
+            background-color: #FBD784;
+            display: block;
+        }
+    }
+    &__title {
+        color: white;
+        font-family: 'Playfair Display';
+        font-weight: 500;
+        font-size: 87px;
+        line-height: 114%; 
+        text-transform: capitalize;
+        margin-bottom: 32px;
+    }
+    &__scroll {
+        color: white;
+        display: inline-block;
+        position: relative;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.222;
+        padding-right: 32px;
+
+        &::after{
+            content:"";
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background-image: url(/image/Icons/arrow.svg);
+            z-index: 10;
+            width: 16px;
+            height: 24px;
+        }
+    }
+}
+
+// Content
+
+.main {
+    &__container {
+        max-width: 1492px;
+        padding: 0px 15px;
+        margin: 0 auto;
+    }
+    &__content {
+        
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.content {
+    &__text {
+    }
+    &__subtitle {
+    }
+    &__title {
+    }
+    &__info {
+    }
+    &__link {
+    }
+    &__img {
+    }
+}
+
+// --FOOTER--------------------------------------
+
+
+
+.footer {
+    &_copyright {
+    }
+    &_description {
+    }
+    &__container {
+    }
+    &__row {
+    }
+    &__logo {
+    }
+    &__copy {
+    }
+    &__nav {
+    }
+    &__list {
+    }
+    &__item {
+    }
+}
+.footer-nav {
+    &__wrapper {
+    }
+}
+.fnav {
+    &__title {
+    }
+}
+
