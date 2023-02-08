@@ -146,26 +146,124 @@
         padding: 0px 15px;
         margin: 0 auto;
     }
-    &__content {
-        
+    &__content {        
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
+        &:nth-child(even){
+            display: flex;
+            flex-direction: row-reverse;
+        }
     }
 }
 .content {
-    &__text {
+    &__text {       
+    position: relative;
+    padding-left: 150px;
+    margin-top: 140px;
+    &::before{
+        content:attr(data-number);
+        display: block;
+        font-weight: 700;
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        font-size: 240px;
+        line-height: 100%;
+        color: #FFFFFF;
+        opacity: 0.2;
+        top: -103px;
+        left: 0;
+}
+
     }
     &__subtitle {
+        position: relative;
+        padding-left: 96px;
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 22 / 18;
+        /* identical to box height */
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        margin-bottom: 27px;
+        color: #FBD784;
+        &::before{
+            content: "";            
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 72px;
+            height: 2px;
+            background-color: #FBD784;
+            display: block;
+        }
     }
     &__title {
+        max-width: 555px;
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 1.2;
+        color: #FFFFFF;
+        margin-bottom: 27px;
     }
     &__info {
+        width: 682px;
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 178%;
+        color: #FFFFFF;
+        margin-bottom: 27px;
     }
     &__link {
+        position: relative;
+        display: inline-block;
+        a{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.222;
+        padding-right: 32px;
+        color: #FBD784;
+        }
+        &::after{
+            content:"";
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background-image: url(/image/Icons/arrow_Orizont.svg);
+            z-index: 10;
+            width: 24px;
+            height: 16px;
+        }
     }
     &__img {
+        margin-bottom: 200px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // --FOOTER--------------------------------------
 
