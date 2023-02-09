@@ -1,4 +1,3 @@
-
 // --------HEADER--------------------------------------
 
 .container-wide{
@@ -250,51 +249,88 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // --FOOTER--------------------------------------
 
-
-
 .footer {
+    padding-bottom:120px;
     &_copyright {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
     }
     &_description {
+        width: 303px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.78;
+        color: #FFFFFF;
     }
     &__container {
     }
     &__row {
+        display: flex;
+        justify-content: space-between;
     }
     &__logo {
+        font-family: Playfair Display;
+        font-weight: 700;
+        font-size: 32px;
+        margin-bottom: 24px;
     }
     &__copy {
+        margin-top: auto;
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.78;
+        opacity: 0.5;
     }
     &__nav {
+        &:not(:last-child){
+            margin-right: 212px;
+        }
     }
     &__list {
+        margin-top: 24px;
     }
     &__item {
+        &:not(:last-child){
+            margin-bottom: 26px;
+        }
+        a{
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 1.78;
+            color: #FFFFFF;
+            position: relative;
+            &:hover:after{
+                content:"";
+                position: absolute;
+                width: 100%;
+                background-color: #fff;
+                height: 2px;
+                bottom: 0px;
+                left: 0;
+                display: block;
+            }
+        }
     }
 }
 .footer-nav {
     &__wrapper {
+        display: flex;
     }
 }
 .fnav {
     &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.33;
+        color: #FBD784;
     }
 }
 

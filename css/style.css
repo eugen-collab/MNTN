@@ -263,3 +263,91 @@
 .content__img {
   margin-bottom: 200px;
 }
+
+.footer {
+  padding-bottom: 120px;
+}
+.footer_copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+.footer_description {
+  width: 303px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.78;
+  color: #FFFFFF;
+}
+.footer__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__logo {
+  font-family: Playfair Display;
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+.footer__copy {
+  margin-top: auto;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.78;
+  opacity: 0.5;
+}
+.footer__nav:not(:last-child) {
+  margin-right: 212px;
+}
+.footer__list {
+  margin-top: 24px;
+}
+.footer__item:not(:last-child) {
+  margin-bottom: 26px;
+}
+.footer__item a {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.78;
+  color: #FFFFFF;
+  position: relative;
+}
+.footer__item a:hover:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  height: 2px;
+  bottom: 0px;
+  left: 0;
+  display: block;
+}
+
+.footer-nav__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.fnav__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.33;
+  color: #FBD784;
+}
